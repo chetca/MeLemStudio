@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿{jusing UnityEngine;
 using System;
 /// <summary>
 /// Simple player controller based on a Rigidbody
