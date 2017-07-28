@@ -2,7 +2,8 @@
 using System.Collections; 
 using stats; //Используем пространство stats 
 
-public class playerstat : MonoBehaviour { 
+public class PlayerStats : MonoBehaviour { 
+	//public Stats stats = Stats.getInstance();
 	public Stats stats = new Stats(); //Объявляем новый объект Stats 
 	public static bool death; //Глобальная переменная отвечающа нам жив ли персонаж 
 	int showstat = 0; //Отображать ли окно со статами 

@@ -4,14 +4,14 @@ using System.Collections;
 namespace stats { //Пространство имен stats 
 	public class Stats //Объявляем новый класс Stats 
 	{ 
-		public float HP; //Здоровье
-		public float Damage; //Урон
-		public float Agility; //Ловкость
-		public float Breaking; //Взлом
-		public float Charm; //Очарование
-		public float Stamina; //Выностивость
-		public float Heat; //Тепло
-		public float Repose; //Сон
+		public float HP = 8; //Максимум здоровья
+		public float Damage = 6; //Максимум урона
+		public float Agility = 6; //Максимум ловкости
+		public float Breaking = 5; //Максимум взлома
+		public float Charm = 5; //Максимум очарования
+		public float Stamina = 100; //Максимум взлома
+		public float Heat = 100; //Максимум тепла
+		public float Repose = 0; //Сон
 
 		public Stats() //конструктор класса по умолчанию
 		{ 
@@ -30,35 +30,35 @@ namespace stats { //Пространство имен stats
 		//=====================================================
 
 		public void newHP(){
-			this.HP = 8;
+			this.HP = HP;
 		}
 
 		public void newDamage(){
-			this.Damage = 6;
+			this.Damage = Damage;
 		}
 
 		public void newAgility(){
-			this.Agility = 6;
+			this.Agility = Agility;
 		}
 
 		public void newBreaking(){
-			this.Breaking = 5;
+			this.Breaking = Breaking;
 		}
 
 		public void newCharm(){
-			this.Charm = 5;
+			this.Charm = Charm;
 		}
 
 		public void newStamina(){
-			this.Stamina = 100;
+			this.Stamina = Stamina;
 		}
 
 		public void newHeat(){
-			this.Heat = 100;
+			this.Heat = Heat;
 		}
 
 		public void newRepose(){
-			this.Repose = 0;
+			this.Repose = Repose;
 		}
 
 	} 

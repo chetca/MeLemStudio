@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerBarDisplay : MonoBehaviour { 
 	public GUISkin StatsGui; // Скин где хранятся текстуры баров, В инспекторе назначить наш новый созданный скин 
-	public playerstat Char; // Объект на котором висят статы 
+	public PlayerStats Char; // Объект на котором висят статы 
 	public bool Visible = true; //Видимость бара 
 
 	// Use this for initialization 
@@ -17,7 +17,7 @@ public class PlayerBarDisplay : MonoBehaviour {
 			//назначаем текущий скин для GUI 
 			GUI.skin = StatsGui; 
 			//получаем переменную PlayerSt компонент PlayerStats 
-			playerstat PlayerSt = (playerstat)Char.GetComponent("playerstat"); 
+			PlayerStats PlayerSt = (PlayerStats)Char.GetComponent("PlayerStats"); 
 			//получаем значения 
 			float MaxHealth = PlayerSt.stats.HP; 
 			float CurHealth = PlayerSt.curHP; 
